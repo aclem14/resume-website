@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aaron Clem — Resume</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div>
+        <h1>Aaron Clem</h1>
+        <p class="subtitle">Quality & Software Engineer</p>
+        <ul class="contact">
+          <li>📍 Land O’ Lakes, FL 34637</li>
+          <li>📧 <a href="mailto:aclem14@yahoo.com">aclem14@yahoo.com</a></li>
+          <li>📞 517-403-6069</li>
+          <li><a href="https://github.com/aclem14" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/aaronclem14/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <div class="actions">
+        <button id="themeToggle" type="button" aria-pressed="false">🌙 Dark Mode</button>
+        <button id="printBtn" type="button">Save as PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Summary -->
+    <section>
+      <h2>Professional Summary</h2>
+      <p>
+        Quality and Software Engineer with proven expertise in full-stack development
+        (JavaScript, React.js, Node.js, Express, SQL, MongoDB, Next.js) and extensive
+        experience in quality assurance/control in many manufacturing settings, ISO
+        9001/17025 compliance, Six Sigma, SPC, and process improvement. Skilled in
+        building secure, production-ready applications, managing audits, corrective
+        actions (internal and external), and driving defect reduction through data-driven
+        quality frameworks.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <div class="section-header">
+        <h2>Technical Skills</h2>
+      </div>
+
+      <!-- Skill Focus Radios (centered) -->
+      <form class="focus-toggle" role="radiogroup" aria-label="Skill Focus">
+        <label><input type="radio" name="focus" value="all" checked /> All</label>
+        <label><input type="radio" name="focus" value="software" /> Software (Junior Level)</label>
+        <label><input type="radio" name="focus" value="quality" /> Quality (Advanced Level)</label>
+      </form>
+
+      <!-- Tag each skill group for highlighting -->
+      <ul class="skills">
+        <li data-skill-group="software"><strong>Frontend:</strong> HTML, CSS, JavaScript, React.js, Next.js</li>
+        <li data-skill-group="software"><strong>Backend:</strong> Node.js, Express.js, RESTful APIs, SQL, MongoDB</li>
+        <li data-skill-group="software"><strong>Tools:</strong> Git/GitHub, NPM, VS Code, Chrome DevTools, Visual Studio</li>
+        <li data-skill-group="quality"><strong>Quality:</strong> ISO 9001, ISO 17025, Six Sigma, SPC, PPAP, FMEA, APQP, Cp/Cpk, Pareto Analysis, CAPA</li>
+        <li data-skill-group="quality"><strong>Audits & Compliance:</strong> CSA, UL, TUV, FM, Internal & External Audits</li>
+        <li data-skill-group="quality software"><strong>Testing:</strong> Mocha/Chai (unit & integration), Mechanical & Electrical Validation</li>
+        <li data-skill-group="quality"><strong>Data & Reporting:</strong> Scrap Tracking, Calibration Systems, Supplier Metrics, Dashboards</li>
+      </ul>
+      <p class="hint">Tip: select <em>Software</em> or <em>Quality</em> to highlight related skills and roles.</p>
+    </section>
+
+    <!-- Full-Time Professional Experience -->
+    <section>
+      <h2>Professional Experience</h2>
+
+      <article class="job" data-role="software">
+        <h3>Software Engineering – University of South Florida</h3>
+        <p><em>Tampa, FL · Feb 2025 – Present</em></p>
+        <ul>
+          <li>Built and deployed full-stack web apps using JavaScript, Node.js, Express, and MongoDB.</li>
+          <li>Developed RESTful APIs, authentication, and database integrations for scalable solutions.</li>
+          <li>Applied Agile/Scrum practices with Git/GitHub, peer reviews, and CI/CD principles.</li>
+          <li>Created unit/integration tests with Mocha/Chai to ensure code quality.</li>
+        </ul>
+      </article>
+
+      <article class="job" data-role="quality">
+        <h3>Quality Engineer – AJ’s Power Source</h3>
+        <p><em>Land O’ Lakes, FL · Sep 2022 – Sep 2024</em></p>
+        <ul>
+          <li>Directed root cause investigations and implemented corrective actions, reducing defects.</li>
+          <li>Led prototype and validation testing for new product development and regulatory approvals.</li>
+        </ul>
+      </article>
+
+      <article class="job" data-role="quality software">
+        <h3>QA & Regulatory Affairs Manager / Quality Engineer – Sensidyne</h3>
+        <p><em>Saint Petersburg, FL · Oct 2015 – Jul 2019</em></p>
+        <ul>
+          <li>Oversaw ISO 9001, CSA, UL, TUV audits, sustaining 100% pass rate.</li>
+          <li>Established and managed an ISO 17025-compliant calibration laboratory, achieving certification.</li>
+          <li>Applied SPC methodologies to improve machining process capability and reduce variation.</li>
+        </ul>
+      </article>
+
+      <article class="job" data-role="quality">
+        <h3>Quality Manager – Barnett Outdoors</h3>
+        <p><em>Tarpon Springs, FL · Mar 2013 – Sep 2015</em></p>
+        <ul>
+          <li>Built scrap tracking system enabling real-time quality improvement.</li>
+          <li>Introduced hourly SPC monitoring, reducing rework.</li>
+          <li>Developed supplier dashboards and centralized document control.</li>
+        </ul>
+      </article>
+
+      <article class="job" data-role="quality">
+        <h3>Quality Assurance Specialist – Cox Target Media / Valpak</h3>
+        <p><em>Saint Petersburg, FL · Oct 2008 – Mar 2013</em></p>
+        <ul>
+          <li>Conducted process audits and root cause analysis in high-volume production.</li>
+          <li>Utilized Pareto analysis to drive corrective actions and trend reduction.</li>
+        </ul>
+      </article>
+
+      <article class="job" data-role="neutral">
+        <h3>Realtor – Dalton Wade Real Estate Group</h3>
+        <p><em>Saint Petersburg, FL · Nov 2019 – Present</em></p>
+      </article>
+
+      <article class="job" data-role="quality">
+        <h3>Earlier Career (1996–2008)</h3>
+        <ul>
+          <li><strong>Norplas Industries – Supplier Quality Engineer (2004–2008):</strong> Managed supplier quality, Cp/Cpk analysis, PPAP, APQP, FMEA documentation.</li>
+          <li><strong>Inergy Automotive Systems – Quality Engineer / Auditor (1996–2004):</strong> Conducted internal and customer audits for Jeep fuel systems compliance.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Part-Time & Seasonal Work -->
+    <section>
+      <h2>Part-Time & Seasonal Work</h2>
+      <article class="job" data-role="software neutral">
+        <h3>Data Journalist – Sportradar (Seasonal)</h3>
+        <p><em>Greater Tampa Bay Area · May 2024 – Present</em></p>
+        <ul>
+          <li>Delivered real-time NCAA Baseball coverage with live play-by-play data feeds for sports media partners.</li>
+          <li>Captured and validated in-game statistics under tight deadlines to ensure accuracy of data pipelines.</li>
+          <li>Strengthened expertise in sports analytics and live data reporting, complementing software engineering and quality background.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2>Education & Certifications</h2>
+      <ul>
+        <li><strong>University of South Florida</strong> – Graduate Certificate, Software Engineering (Expected Aug 2025)</li>
+        <li><strong>University of South Florida</strong> – Graduate Certificate, Quality Management – Industrial Engineering (2013)</li>
+        <li><strong>University of Phoenix</strong> – Bachelor of Science, Business Management (2004)</li>
+        <li><strong>Certifications:</strong> Six Sigma (Quality), ISO 9001 & ISO 17025 Compliance, Software Engineering Bootcamp</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm" method="POST">
+        <div class="grid-2">
+          <label>
+            <span>Your Name</span>
+            <input type="text" name="name" required autocomplete="name" />
+          </label>
+          <label>
+            <span>Your Email</span>
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+        </div>
+
+        <label>
+          <span>Subject</span>
+          <input type="text" name="subject" required />
+        </label>
+
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+
+        <!-- Honeypot -->
+        <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" title="Leave this field empty" placeholder="Leave this field empty">
+
+        <div class="contact-actions">
+          <button id="contactSubmit" type="submit">Send Message</button>
+          <span id="contactStatus" role="status" aria-live="polite"></span>
+        </div>
+      </form>
+
+      <p class="hint hint-margin">
+        Prefer email? <a href="mailto:aclem14@yahoo.com">aclem14@yahoo.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Aaron Clem. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
